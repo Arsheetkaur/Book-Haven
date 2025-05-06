@@ -1,0 +1,233 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+/* /header/ */
+header {
+    background: #444;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+    font-size: large;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li {
+    margin: 0 15px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.search-form input {
+    padding: 5px;
+}
+.search-form button {
+    padding: 5px 10px;
+    background: #f90;
+    border: none;
+    cursor: pointer;
+}
+/* category_list.css */
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://i.pinimg.com/originals/dd/e7/1f/dde71f5725e464c33d131d2fa89bf7ca.gif') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    color: #fff;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2em;
+}
+.filter-search {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+}
+#searchInput, #filterSelect {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+.category-list {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category {
+    margin: 15px;
+    flex-basis: calc(33.33% - 30px); /* 3 items per row */
+}
+
+.category a {
+    text-decoration: none;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover img {
+    transform: rotate(10deg); /* Slight image rotation on hover */
+}
+
+.category-title {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.category.adventure .card {
+    background-color: #ffdab9; /* Peach puff */
+}
+
+.category.thriller .card {
+    background-color: #c1c8e4; /* Lavender gray */
+}
+
+.category.comedy .card {
+    background-color: #fffacd; /* Lemon chiffon */
+}
+.category.Mystery .card {
+    background-color: #f5fffa; /* Mint Cream */
+}
+.category.Fantasy .card {
+    background-color: #f0f8ff; /*Alice Blue */
+}
+.category.Biography.card {
+    background-color: #b0c4de; /*Light Steel Blue */
+}
+.category.Historical-Fiction.card {
+    background-color: #20b2aa; /* Light Sea Green*/
+}
+.category.Horror .card {
+    background-color: #d8bfd8; /* Thistle */
+}
+.category.Self-Help .card {
+    background-color: #ffe4e1; /* Misty Rose*/
+}
+.category.Travel .card {
+    background-color: #f08080; /* light coral */
+}
+.category.Cooking .card {
+    background-color: #87ceeb; /* sky blue*/
+}
+.category.Art .card {
+    background-color: #ffebcd; /* Blanched Almond */
+}
+.category.Non-Fiction .card {
+    background-color: #b0e0e6; /* powder blue */
+}
+.category.Action .card {
+    background-color: #778899; /* Light Slay Grey */
+}
+.category.YoungAdult .card {
+    background-color: #dda0dd; /* Plum */
+}
+.category.Mystery .card {
+    background-color: #f5fffa; /* Mint Cream */
+}
+.category.Fantasy .card {
+    background-color: #f0f8ff; /* Alice Blue */
+}
+.category.Biography .card {
+    background-color: #b0c4de; /* Light Steel Blue */
+}
+.category.Historical-Fiction .card {
+    background-color: #20b2aa; /* Light Sea Green */
+}
+.category.Horror .card {
+    background-color: #d8bfd8; /* Thistle */
+}
+.category.Self-Help .card {
+    background-color: #ffe4e1; /* Misty Rose */
+}
+.category.Travel .card {
+    background-color: #f08080; /* Light Coral */
+}
+.category.Cooking .card {
+    background-color: #87ceeb; /* Sky Blue */
+}
+.category.Art .card {
+    background-color: #ffebcd; /* Blanched Almond */
+}
+.category.Non-Fiction .card {
+    background-color: #b0e0e6; /* Powder Blue */
+}
+.category.Action .card {
+    background-color: #778899; /* Light Slate Gray */
+}
+.category.Young-Adult .card {
+    background-color: #dda0dd;  /* Plum */
+}
+
+.category.Music .card {
+    background-color: #FF9A8A;  /*Peach Pink */
+}
+.category.Education .card {
+    background-color: #A6FBB2;  /*Pale Mint Green*/
+}
+.category.Gardening .card {
+    background-color: #6da29f;  /*accent*/
+}
+
+
+
+
+
+
+
+
+/* Additional categories color background */

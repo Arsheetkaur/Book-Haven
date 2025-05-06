@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <link rel="stylesheet" href="book-details.css">
+</head>
+
+<body>
+    <header>
+        <h1>Book Haven - Book Details</h1>
+        <nav>
+            <ul>
+                <li><a href="Main Project.html">Home</a></li>
+                <li><a href="category list.html">Category</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="book-details">
+            <div class="book-image">
+                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1602190253l/52578297.jpg" alt="Book Cover">
+            </div>
+            <div class="book-info">
+                <h2>The Great Adventure</h2>
+                <p><strong>Author:</strong> John Doe</p>
+                <p><strong>Genre:</strong> Fiction, Adventure</p>
+                <p><strong>Description:</strong> This is an exciting tale of adventure, love, and bravery that takes you through an unforgettable journey.</p>
+                <p><strong>Price:</strong> $<span id="bookPrice">14.99</span></p>
+                <div class="quantity">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                </div>
+                <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Book Haven - All rights reserved.</p>
+    </footer>
+
+    <script src="book-details.js"></script>
+</body>
+
+</html> 

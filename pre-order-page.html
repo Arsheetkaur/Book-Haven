@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Pre-order the latest book from Book Haven.">
+    <meta name="keywords" content="Pre-order, Book Haven, The Party, Natasha Preston">
+    <meta name="author" content="Book Haven">
+    <title>Pre-order The Party - Book Haven</title>
+    <link rel="stylesheet" href="pre-order-page.css">
+</head>
+
+<body>
+    <header>
+        <h1>Book Haven - Pre-order The Party</h1>
+        <nav>
+            <ul>
+                <li><a href="Main Project.html">Home</a></li>
+                <li><a href="category list.html">Categories</a></li>
+                <li><a href="login page.html">Login</a></li>
+            </ul>
+        </nav>
+        <form class="search-form" id="search-form">
+            <input type="text" id="searchInput" placeholder="Search books..." required>
+            <button type="submit" id="searchButton">Search</button>
+        </form>
+    </header>
+
+    <main>
+        <section class="pre-order-section">
+            <div class="book-details">
+                <img src="https://m.media-amazon.com/images/I/91KvMkjtGeL._AC_UF1000,1000_QL80_.jpg" alt="The Party">
+                <div class="book-info">
+                    <h2>The Party</h2>
+                    <p>By Natasha Preston</p>
+                    <p>Get ready for an exciting new release from Natasha Preston! 'The Party' is coming soon, and you can pre-order it now!</p>
+                    <p><strong>Release Date: </strong>Next Month</p>
+                    <p><strong>Price: </strong>$19.99</p>
+                </div>
+            </div>
+
+            <form id="pre-order-form" class="pre-order-form">
+                <h3>Pre-order Now</h3>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="5" value="1" required>
+
+                <button type="submit" id="submit-btn" class="submit-btn">Confirm Pre-order</button>
+            </form>
+        </section>
+
+        <section id="confirmation-section" class="confirmation-section" style="display: none;">
+            <h3>Thank you for your pre-order!</h3>
+            <p>We have received your pre-order for "The Party" by Natasha Preston. You will receive a confirmation email shortly.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Book Haven - All rights reserved</p>
+    </footer>
+
+    <script src="pre-order-page.js"></script>
+</body>
+
+</html>

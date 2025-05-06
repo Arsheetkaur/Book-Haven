@@ -1,0 +1,215 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+/* /header/ */
+header {
+  background: #444;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin: 0;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  margin: 0 15px;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.search-form input {
+  padding: 5px;
+}
+.search-form button {
+  padding: 5px 10px;
+  background: #f90;
+  border: none;
+  cursor: pointer;
+}
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Global Body Styles */
+body {
+  background-color: #f1f1f1;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Author Profile Section */
+.author-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.author-img-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.author-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.author-img-container:hover {
+  transform: scale(1.1);
+}
+
+.author-name {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 20px 0;
+}
+
+.author-bio {
+  max-width: 800px;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.explore-btn {
+  background-color: #ff6b35;
+  color: white;
+  padding: 12px 40px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #f39c12;
+  transform: translateY(-5px);
+}
+
+/* Books Section */
+.books {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.books h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.book-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.book-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.book-card img:hover {
+  transform: scale(1.05);
+}
+
+.book-card h3 {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+/* Initially hide the books section */
+.books {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateY(20px);
+}
+
+/* When the books section is visible, make it appear */
+.books.visible {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+/* /header/ */
+header {
+    background: #444;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li {
+    margin: 0 15px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.search-form input {
+    padding: 5px;
+}
+.search-form button {
+    padding: 5px 10px;
+    background: #f90;
+    border: none;
+    cursor: pointer;
+}
+/* Discount Books Header */
+.discount-books-header {
+    background-color: rgba(221, 136, 196, 0.6);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    color: #f8f8f8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.discount-books-header h1 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.discount-books-header p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-style: italic;
+}
+.book-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.book-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.book-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.book-card h3 {
+    margin: 0.5rem 0;
+}
+
+.book-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.discounted-price {
+    color: #e63946;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Cart</title>
+    <style>
+        /* Cart Icon */
+        .shopping-cart {
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 24px;
+        }
+        .shopping-cart span {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 5px;
+        }
+        /* Modal Styling */
+        .cart-modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Shopping Cart Icon -->
+<div id="shopping-cart-icon" class="shopping-cart">
+    🛒 <span id="cart-count">0</span>
+</div>
+
+<!-- Cart Modal -->
+<div id="cart-modal" class="cart-modal">
+    <h2>Your Cart</h2>
+    <div id="cart-items">
+        <!-- Cart items will be displayed here -->
+    </div>
+    <p>Total: $<span id="cart-total">0.00</span></p>
+    <button id="checkout-button">Proceed to Checkout</button>
+    <button id="close-cart">Close</button>
+</div>
+
+<!-- Add to Cart Buttons -->
+<button class="add-to-cart" data-id="1" data-name="Item 1" data-price="10.00">Add Item 1 to Cart</button>
+<button class="add-to-cart" data-id="2" data-name="Item 2" data-price="15.00">Add Item 2 to Cart</button>
+
+<script>
+    let cart = [];
+
+    // Function to update the cart UI
+    function updateCartUI() {
+        const cartCount = document.getElementById('cart-count');
+        const cartItemsContainer = document.getElementById('cart-items');
+        const cartTotal = document.getElementById('cart-total');
+        cartItemsContainer.innerHTML = '';
+
+        let totalPrice = 0;
+        cart.forEach(item => {
+            const cartItem = document.createElement('div');
+            cartItem.innerHTML = `
+                <p>${item.name} - $${item.price} x ${item.quantity}</p>
+            `;
+            cartItemsContainer.appendChild(cartItem);
+            totalPrice += item.price * item.quantity;
+        });
+
+        cartCount.innerText = cart.length;
+        cartTotal.innerText = totalPrice.toFixed(2);
+    }
+
+    // Function to add items to the cart
+    function addToCart(id, name, price) {
+        const existingItem = cart.find(item => item.id === id);
+
+        if (existingItem) {
+            existingItem.quantity++;
+        } else {
+            cart.push({
+                id: id,
+                name: name,
+                price: parseFloat(price),
+                quantity: 1
+            });
+        }
+
+        updateCartUI();
+    }
+
+    // Function to show the cart modal
+    function showCartModal() {
+        document.getElementById('cart-modal').style.display = 'block';
+    }
+
+    // Function to close the cart modal
+    function closeCartModal() {
+        document.getElementById('cart-modal').style.display = 'none';
+    }
+
+    // Event listeners for add-to-cart buttons
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', (e) => {
+            const id = e.target.getAttribute('data-id');
+            const name = e.target.getAttribute('data-name');
+            const price = e.target.getAttribute('data-price');
+            addToCart(id, name, price);
+        });
+    });
+
+    // Event listener for showing the cart modal when clicking the cart icon
+    document.getElementById('shopping-cart-icon').addEventListener('click', showCartModal);
+
+    // Event listener for closing the cart modal
+    document.getElementById('close-cart').addEventListener('click', closeCartModal);
+
+    // Event listener for Proceed to Checkout button
+    document.getElementById('checkout-button').addEventListener('click', () => {
+        alert('Proceeding to Checkout!');
+    });
+</script>
+
+</body>
+</html>

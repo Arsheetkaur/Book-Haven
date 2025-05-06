@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Comments</title>
+    <link rel="stylesheet" href="view-comments.css">
+</head>
+<body>
+    <div class="container">
+        <section class="comments-section">
+            <h2>Customer Reviews</h2>
+            <div class="comments-carousel">
+                <div class="testimonial-box">
+                    <img src="https://i.pinimg.com/736x/bb/8a/91/bb8a91a047deaa78f7a89228f80d92da.jpg" alt="Customer 1">
+                    <p class="quote">"This bookstore has an amazing collection of books, and the delivery was super fast!"</p>
+                    <p class="author">John Doe</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+
+                <div class="testimonial-box">
+                    <img src="https://i.pinimg.com/736x/a2/27/63/a22763d7536e8489602e182200fae27a.jpg" alt="Customer 2">
+                    <p class="quote">"I found all my favorite books here, and the customer service was top-notch."</p>
+                    <p class="author">Jane Smith</p>
+                    <div class="rating">★★★★☆</div>
+                </div>
+
+                <div class="testimonial-box">
+                    <img src="https://i.pinimg.com/736x/57/3a/46/573a46c7818f8cca76e394ac5af72542.jpg" alt="Customer 3">
+                    <p class="quote">"Fantastic experience! I'll be coming back for more books."</p>
+                    <p class="author">Emily Brown</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+
+                <div class="testimonial-box">
+                    <img src="https://i.pinimg.com/736x/57/3a/46/573a46c7818f8cca76e394ac5af72542.jpg" alt="Customer 4">
+                    <p class="quote">"Great platform! Easy to navigate and discover new books."</p>
+                    <p class="author">Mark Davis</p>
+                    <div class="rating">★★★★☆</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="add-comment-section">
+            <h3>Add Your Comment</h3>
+            <form id="comment-form">
+                <label for="username">Your Name:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your name" required>
+                
+                <label for="comment">Your Comment:</label>
+                <textarea id="comment" name="comment" rows="4" placeholder="Enter your comment" required></textarea>
+                
+                <label for="rating">Rating:</label>
+                <div class="rating-stars">
+                    <span class="star" onclick="rate(1)">★</span>
+                    <span class="star" onclick="rate(2)">★</span>
+                    <span class="star" onclick="rate(3)">★</span>
+                    <span class="star" onclick="rate(4)">★</span>
+                    <span class="star" onclick="rate(5)">★</span>
+                </div>
+                <input type="hidden" id="rating-value" name="rating">
+                
+                <button type="submit" class="submit-btn">Submit Comment</button>
+            </form>
+        </section>
+    </div>
+    
+    <script src="view-comments.js"></script>
+</body>
+</html>

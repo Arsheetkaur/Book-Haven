@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author Profile</title>
+    <link rel="stylesheet" href="author-profile.css">
+</head>
+
+<body>
+    <header>
+        <h1>Book Haven - An Online Bookstore</h1>
+
+        <nav>
+            <ul>
+                <li><a href="Main Project.html">Home</a></li>
+                <li><a href="about us.html">About</a></li>
+                <li><a href="category list.html">Category</a></li>
+                <li><a href="login page.html">Login</a></li>
+                <li><a href="create account.html">Create Account</a></li>
+            </ul>
+            </nav>
+            <form class="search-form" id="search-form">
+                <input type="text" id="searchInput" placeholder="Search books..." required>
+                <button type="submit" id="searchButton">Search</button>
+            </form>
+        </nav>
+    </header>
+    <!-- Author Profile Section -->
+    <section class="author-profile">
+        <div class="profile-header">
+            <div class="author-img-container">
+                <img src="https://cdn.britannica.com/36/235336-050-D26FAD80/J-K-Rowling-2017-Harry-Potter-author.jpg" alt="J.K. Rowling" class="author-img">
+            </div>
+            <div class="author-info">
+                <h1 class="author-name">J.K. Rowling</h1>
+                <p class="author-bio">
+                    J.K. Rowling, British author best known for the Harry Potter fantasy series, also works in crime fiction and young adult literature.
+                </p>
+                <a href="#books" class="explore-btn">Explore Books</a>
+            </div>
+        </div>
+
+        <!-- Books Section -->
+        <section id="books" class="books">
+            <h2>Books by J.K. Rowling</h2>
+            <div class="book-grid">
+                <div class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/81q77Q39nEL.jpg" alt="Harry Potter 1">
+                    <h3>Harry Potter and the Philosopher's Stone</h3>
+                </div>
+                <div class="book-card">
+                    <img src="https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_568,c_scale,dpr_1.5/jackets/9781408855669.jpg" alt="Harry Potter 2">
+                    <h3>Harry Potter and the Chamber of Secrets</h3>
+                </div>
+                <div class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/81NQA1BDlnL._AC_UF1000,1000_QL80_.jpg" alt="Harry Potter 3">
+                    <h3>Harry Potter and the Prisoner of Azkaban</h3>
+                </div>
+                <div class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/81zeKRGCPpL.jpg" alt="Harry Potter 4">
+                    <h3>Harry Potter and the Goblet of Fire</h3>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 J.K. Rowling Fan Page. All rights reserved.</p>
+    </footer>
+
+    <script src="author-profile.js"></script>
+</body>
+
+</html>

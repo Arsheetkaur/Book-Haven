@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Categories</title>
+    <link rel="stylesheet" href="category list.css">
+</head>
+
+<body>
+    <header>
+        <h1>Book Haven - An Online Bookstore</h1>
+
+        <nav>
+            <ul>
+                <li><a href="Main Project.html">Home</a></li>
+                <li><a href="about us.html">About</a></li>
+                <li><a href="category list.html">Category</a></li>
+                <li><a href="login page.html">Login</a></li>
+                <li><a href="create account.html">Create Account</a></li>
+            </ul>
+            </nav>
+            <form class="search-form" id="search-form">
+                <input type="text" id="searchInput" placeholder="Search books..." required>
+                <button type="submit" id="searchButton">Search</button>
+            </form>
+        </nav>
+    </header>
+    <div class="header">
+        <h1>Explore Book Categories</h1>
+        <p>Find a variety of books ranging from thrilling adventures to heartfelt romances and mind-bending mysteries.</p>
+    </div>
+    <!-- Search adn Filter Section  -->
+     <div class="filter-search">
+        <input type="text" id="searchInput" placeholder="Search categories.." onkeyup="searchCategories()">
+        <select id="filterSelect" onchange="filterCategories()">
+            <option value="all">All</option>
+            <option value="adventure">Adventure</option>
+            <option value="thriller">Thriller</option>
+            <option value="comedy">Comedy</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Biography">Biography</option>
+            <option value="Historical fiction">Historical-Fiction</option>
+            <option value="Horror">Horror</option>
+            <option value="Self-Help">Self-help</option>
+            <option value="Travel">Travel</option>
+            <option value="Cooking">Cooking</option>
+            <option value="Art">Art</option>
+            
+            <!-- Add more filter options as needed  -->
+        </select>
+     </div>
+    <ul class="category-list">
+        <li class="category adventure">
+            <a href="adventure category.html">
+                <div class="card">
+                    <img src="https://i.pinimg.com/originals/3e/56/73/3e5673cce9d3cf6374c992ba9a9020d2.gif" alt="Adventure">
+                    <span class="category-title">Adventure</span>
+                </div>
+            </a>
+        </li>
+        <li class="category thriller">
+            <a href="thriller category.html">
+                <div class="card">
+                    <img src="https://i.pinimg.com/originals/60/b7/4f/60b74fabb64249660b86445a3240d9df.gif" alt="Thriller">
+                    <span class="category-title">Thriller</span>
+                </div>
+            </a>
+        </li>
+        <li class="category comedy">
+            <a href="comedy category.html">
+                <div class="card">
+                    <img src="https://i.pinimg.com/originals/e6/2f/e0/e62fe0ca7401c7169801f6603a1d4b7b.gif" alt="Comedy">
+                    <span class="category-title">Comedy</span>
+                </div>
+            </a>
+        </li>
+        <li class="category Mystery">
+            <a href="Mystery category.html">
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/c3/35/d4/c335d457a714392583c05111a7019636.jpg" alt="Mystery">
+                    <span class="category-title">Mystery</span>
+                </div>
+            </a>
+        </li>
+        <li class="category Fantasy">
+            <a href="Fantasy category.html">
+                <div class="card">
+                    <img src="https://i.pinimg.com/564x/6a/40/b3/6a40b3d08e14c3745f6c893992edabca.jpg" alt="Fantasy">
+                    <span class="category-title">Fantasy</span>
+                </div>
+            </a>
+        </li>
+        <li class="category Biography">
+            <a href="Biography category.html">
+                <div class="card">
+                    <img src="https://thumbs.dreamstime.com/b/biography-genre-icon-element-literary-genres-icon-mobile-concept-web-apps-detailed-biography-genre-icon-can-be-used-129495532.jpg" alt="Biography">
+                    <span class="category-title">Biography</span>
+                </div>
+            </a>
+        </li>
+        <li class="category Historical-Fiction">
+            <a href="Historical-Fiction.html">
+                <div class="card">
+                    <img src="https://i.pinimg.com/564x/13/0d/05/130d05afa62d06f2dc955f6a5869cf3a.jpg" alt="Historical Fiction">
+                    <span class="category-title">Historical Fiction</span>
+                </div>
+            </a>
+        </li>
+        <li class="category Horror">
+            <a href="Horror.html">
+                <div class="card">
+                    <img src="https://i.pinimg.com/564x/e7/0d/ca/e70dcab99091cbdde74c8d983f763569.jpg" alt="Horror">
+                    <span class="category-title">Horror</span>
+                </div>
+            </a>
+        </li>
+        <li class="category Self-Help">
+            <a href="Self-Help.html">
+                <div class="card">
+                    <img src="https://www.shutterstock.com/image-vector/selfconfidence-icon-confidence-life-skills-260nw-2221514161.jpg" alt="Self-Help">
+                    <span class="category-title">Self-Help</span>
+                </div>
+            </a>
+        </li>
+        <li class="category Non-Fiction">
+            <a href="Non-fiction .html">
+                <div class="card">
+                    <img src="https://i.pinimg.com/564x/85/2a/5f/852a5f3cd0d06c89ece28258f989eb10.jpg" alt="Non-Fiction">
+                    <span class="category-title">Non-Fiction</span>
+                </div>
+            </a>
+        </li>
+        <li class="category Action">
+            <a href="Action.html">
+                <div class="card">
+                    <img src="https://i.pinimg.com/originals/50/59/f6/5059f6945d93a8e1a498779a241acfcc.gif" alt="Action">
+                    <span class="category-title">Action</span>
+                </div>
+            </a>
+        </li>
+        <li class="category Young-Adult">
+            <a href="Young-adult.html">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/1186766314/vector/people-line-icon.jpg?s=612x612&w=0&k=20&c=3_g-czGOTMmFj9b4TxHyj9e8EwtIRUyhVGQ1ITUG0nU=" alt="Young Adult">
+                    <span class="category-title">Young Adult</span>
+                </div>
+            </a>
+        </li>
+        <li class="category Travel">
+            <a href="Travel.html">
+                <div class="card">
+                    <img src="https://i.pinimg.com/originals/6d/b0/f4/6db0f42555cf6153f6d044f91f940202.gif" alt="Travel">
+                    <span class="category-title">Travel</span>
+                </div>
+            </a>
+        </li>
+        <li class="category Cooking">
+            <a href="Cooking.html">
+                <div class="card">
+                    <img src="https://i.pinimg.com/originals/a2/18/f7/a218f772a59aad480fcded754fa01824.gif" alt="Cooking">
+                    <span class="category-title">Cooking</span>
+                </div>
+            </a>
+        </li>
+        <li class="category Art">
+            <a href="Art.html">
+                <div class="card">
+                    <img src="https://i.pinimg.com/originals/2e/69/36/2e6936ab57926aa97dcb9f3cba3dfab9.gif" alt="Art">
+                    <span class="category-title">Art</span>
+                </div>
+            </a>
+        </li>
+        <li class="category Music">
+            <a href="Music.html">
+                <div class="card">
+                    <img src="https://i.pinimg.com/originals/cf/ae/8a/cfae8a2a3414ba9eba3380f996679493.gif" alt="Music"> 
+                    <span class="category-title">Music</span>
+                </div>
+            </a>
+        </li>
+        <li class="category Education">
+            <a href="Education.html">
+                <div class="card">
+                    <img src="https://i.pinimg.com/originals/14/c9/88/14c9886ceb7f29577bbca901870ffbe4.gif" alt="Education">
+                    <span class="category-title">Education</span>
+                </div>
+            </a>
+        </li>
+        <li class="category Gardening">
+            <a href="Gardening.html">
+                <div class="card">
+                    <img src="https://i.pinimg.com/originals/df/19/83/df19830a5fa3f4a035e140336e0694f6.gif" alt="Time Travel">
+                    <span class="category-title">Gardening</span>
+                </div>
+                <script src="category list.js"></script>
+            </a>
+        </li>
+
+
+        
+        
+        <!-- Additional categories can follow the same structure -->
+    </ul>
+</body>
+
+</html>

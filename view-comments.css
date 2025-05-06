@@ -1,0 +1,149 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Comments Section */
+.comments-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.comments-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Testimonial Carousel */
+.comments-carousel {
+    display: flex;
+    justify-content: space-evenly;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.testimonial-box {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-box .quote {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-box .author {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.testimonial-box .rating {
+    margin-top: 10px;
+    color: gold;
+}
+
+/* Hover effect for testimonial box */
+.testimonial-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Add Comment Section */
+.add-comment-section {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-comment-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.add-comment-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-comment-section label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.add-comment-section input, .add-comment-section textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.add-comment-section .rating-stars {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.add-comment-section .star {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.add-comment-section .star:hover {
+    color: gold;
+}
+
+.add-comment-section .submit-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add-comment-section .submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .comments-carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-box {
+        margin-bottom: 20px;
+    }
+}

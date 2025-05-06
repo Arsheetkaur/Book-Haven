@@ -1,0 +1,106 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 10%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Offer Banner */
+.offer-banner {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #ffe082, #ff7043);
+    color: #fff;
+}
+
+.offer-banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.offer-banner p {
+    font-size: 1.2rem;
+}
+
+/* Books Grid */
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px 10%;
+}
+
+.book-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-item:hover {
+    transform: translateY(-5px);
+}
+
+.book-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.book-details {
+    padding: 10px;
+    text-align: center;
+}
+
+.book-details h3 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.book-details p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.add-to-cart {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #ff7043;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #e64a19;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
